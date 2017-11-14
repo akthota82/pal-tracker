@@ -19,3 +19,10 @@ bootRun.environment([
 test.environment([
         "WELCOME_MESSAGE": "Hello from test",
 ])
+
+subprojects {
+    test {
+        testLogging.exceptionFormat = "full"
+        testLogging.showStandardStreams = true
+    }
+}
